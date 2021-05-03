@@ -5,7 +5,7 @@ This repo contains all the projects for the path of web development. This is my 
 
   ## Basics (HTML,CSS,JS(Vanilla Js))
   -------------
-  [ ] Todo App
+    * [ ] Todo App
     * [ ] Random Quote Generator
     * [ ] Calculator App
     * [ ] Meditation App
