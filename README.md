@@ -4,12 +4,10 @@ This repo contains all the projects for the path of web development. This is my 
 # List of Front End Projects
 
   ## Basics (Designs)
-  -------------------------------
   
-    [ ] Todo App
-    [ ] Random Quote Generator
- 
-    [ ] Calculator App
+    * [ ] Todo App
+    * [ ] Random Quote Generator
+    * [ ] Calculator App
     * [ ] Meditation App
     * [ ] Issue Tracker
     * [ ] Virtual Keyboard
