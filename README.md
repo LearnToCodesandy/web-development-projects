@@ -3,7 +3,7 @@ This repo contains all the projects for the path of web development. This is my 
 
 # List of Front End Projects
 
-  ## Basics (Designs)
+  ## Basics (Designs and Code!)
   
     * [ ] Todo App
     * [ ] Random Quote Generator
