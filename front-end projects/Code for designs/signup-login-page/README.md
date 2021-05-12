@@ -13,5 +13,7 @@
 * [x] desktop screenshot
   ![Screenshot](desktop-design.png)
 
-* [ ] mobile and smaller screenshot
+* smaller screens are taken from width<= 769px
+
+* [x] mobile and smaller screenshot
   ![Screenshot](small-screen-design.PNG)
