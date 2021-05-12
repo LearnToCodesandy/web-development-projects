@@ -114,7 +114,6 @@ html,body{
     color:var(--clr-text);
     margin:0.2rem;
     border: 2px solid transparent;
-    transition: 0.2s ease-in all;
 }
 
 .social-link:hover{
@@ -208,7 +207,6 @@ input{
     color: var(--clr-secondary-dark);
     font-weight: 700;
     box-shadow: 0 0 20px 3px var(--clr-primary-text-highlight);
-    transition: 0.2s ease-in all;
 }
 
 .btn:hover{
@@ -260,7 +258,6 @@ input{
     border: 2px solid var(--clr-secondary-dark);
     color: var(--clr-primary-text-highlight);
     box-shadow: none;
-    transition: 0.2s ease-in all;
 }
 
 .highlight-btn:hover{
