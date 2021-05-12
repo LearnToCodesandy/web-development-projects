@@ -4,7 +4,7 @@
     --font-text: 'Montserrat', sans-serif;
     --clr-text: #e8eddfff;
     --clr-highlight: #f5cb5cff;
-    --clr-highlight-light:#f5cb5cce;
+    --clr-highlight-light:#fade92b0;
     --clr-grad-1: #242423ff;
     --clr-grad-2: #777777;
 }
@@ -93,6 +93,9 @@ img{
     font-size: clamp(0.5rem,1vw,0.75rem);
     padding: 1rem 0.5rem;
     animation: 0.3s ease-in all;
+    background-color: var(--clr-highlight-light);
+    border-radius: 5px;
+    margin-top: 0.5rem;
 }
 
 .icon-container{
