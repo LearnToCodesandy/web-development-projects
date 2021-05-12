@@ -114,3 +114,89 @@ signupLink.addEventListener('click',e=>{
 })
 
 // client side form validation
+
+let modal = document.querySelector('.modal');
+let closeBtn = document.querySelector('.close');
+let message = document.querySelector('.message');
+
+// handle modal
+function handleModal(messageStr){
+    message.textContent = messageStr;
+    modal.classList.toggle('display-hide');
+    setTimeout(()=>{
+        modal.classList.toggle('display-hide');
+    },2000);
+}
+
+// form validation with modal pop up
+function passWordsMatch(pass1,pass2){
+    let password1 = pass1.trim()
+    let password2 = pass2.trim()
+
+    if (password1 === password2) return true
+    return false
+}
+
+function isItEmail(emailAddress){
+    let re = /\S+@\S+\.\S+/;
+    return re.test(emailAddress);
+}
+
+// getting form elements
+let signupUsername = document.querySelector('#name');
+let signupemail = document.querySelector('#email');
+let signupPassword = document.querySelector('#password');
+let signUpRetypePassword = document.querySelector('#passwordretype');
+let agreementCheckbox = document.querySelector('#agreement');
+
+let signUpBtn = document.querySelector('.signup');
+let signInBtn = document.querySelector('.login');
+
+// validating signup
+function validate(name='',email='',password='',retypepassword='',agreementCheckbox=true,signup){
+    
+    if (signup){
+        let signup_count = 0;
+        if (name.length !== 0) signup_count += 1
+            handleModal('name cannot be empty');
+        if (isItEmail(email)) signup_count += 1
+            handleModal('email should be correctly formatted');
+        if (agreementCheckbox) signup_count += 1
+
+        if (retypepassword.length !== 0 || password.length !== 0){
+            if (passWordsMatch(password,retypepassword)) signup_count += 1
+        }
+        if (signup_count == 4) return true
+        return false
+    }else{
+        let signin_count = 0;
+        if (password.length !== 0) signin_count += 1
+            handleModal('name cannot be empty');
+        if (isItEmail(email)) signin_count += 1
+            handleModal('email should be correctly formatted');
+
+        if (signin_count == 2) return true
+        return false
+    }
+}
+
+// validating signup form
+signUpBtn.addEventListener('click',e=>{
+    e.preventDefault();
+    let name = signupUsername.value;
+    let email = signupemail.value;
+    let password = signupPassword.value;
+    let repassword = signUpRetypePassword.value;
+    let check = true    
+    let signupFormState = validate(name,email,password,repassword,check,true); 
+    if (!signupFormState) handleModal('Please make sure all fields are entered correctly');
+})
+
+// validating signin form
+let signin_email = document.querySelector('#signin_email');
+signInBtn.addEventListener('click',e=>{
+    e.preventDefault();
+    let email = document.querySelector('#signin_email').value;
+    let password = document.querySelector('#signInpassword').value;
+    if (!validate('',email,password,'',false,false)) handleModal('please enter correct field values!');
+})
