@@ -95,17 +95,32 @@ img{
     animation: 0.3s ease-in all;
 }
 
-.fa-plus{
-    width:1rem;
-    height: 1rem;
-    border-radius: 50%;
-    border: 2px solid var(--clr-highlight);
+.icon-container{
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
+    width:1rem;
+    height: 1rem;
+    border: 2px solid var(--clr-highlight-light);
+    border-radius: 50%;
     cursor: pointer;
-    color: var(--clr-highlight);
-    font-weight: bold;
+}
+
+.icon-container:hover{
+    box-shadow: 0 0 4px 1px var(--clr-highlight);
+}
+.icon-container::after{
+    content: '';
+    width:0.4rem;
+    height: 0.4rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: auto;
+    transform: translate(-50%,-50%) rotateZ(-45deg);
+    border-bottom:2px solid var(--clr-highlight);
+    border-left: 2px solid var(--clr-highlight);
 }
 
 /* hover effects */
@@ -132,7 +147,7 @@ img{
 @keyframes smoothGrow {
     from{
         opacity:0;
-        transform: translateY(-100%) scale(0);
+        transform: translateY(-10%) scale(0);
     }
     to{
         opacity: 1;
