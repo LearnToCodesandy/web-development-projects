@@ -76,13 +76,16 @@
                 <p class="text">or use email to login</p>
                 <div class="form">
                     <div class="field">
-                        <label for="name">name</label>
-                        <input type="text" name="name" id="name" placeholder="john doe"/>
-                    </div>
-                    <div class="field">
-                        <label for="email">email</label>
-                        <input type="email" name="email" id="email" placeholder="johndoe@gmail.com"/>
+                        <label for="signin_email">email</label>
+                        <input type="signin_email" name="signin_email" id="signin_email" placeholder="johndoe@gmail.com"/>
                     </div>  
+
+                    <div class="field" id="signin-password-field">
+                        <label for="signInpassword">Password</label>
+                        <div class="password-wrapper">
+                            <input type="password" name="password" id="signInpassword">
+                        </div>
+                    </div>
                     <div class="btn-wrapper">
                         <a href="#" class="btn login">Login</a>
                         <p class="text">Create an account? <a href="#" class="signup-link">SignUp</a></p>
@@ -103,6 +106,10 @@
         <div class="clr violet"></div>
     </div>
 
+    <!-- modals -->
+    <div class="modal display-hide">
+        <p class="message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis, ullam sit. Aut dolorem dicta nostrum?</p>
+    </div>
     <script src="./index.js" type="text/javascript"></script>
 </body>
 </html>
