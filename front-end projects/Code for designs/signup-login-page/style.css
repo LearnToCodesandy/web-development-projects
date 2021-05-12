@@ -114,6 +114,7 @@ html,body{
     color:var(--clr-text);
     margin:0.2rem;
     border: 2px solid transparent;
+    transition: 0.2s ease-in all;
 }
 
 .social-link:hover{
@@ -180,14 +181,13 @@ input{
 }
 
 .checkbox-field{
-    width: 100%;
+    display: flex;
     flex-direction: row-reverse;
     align-items: center;
     justify-content: flex-end;
 }
 
 #agreement{
-    width:auto;
     margin: 0 1rem 0 0;
 }
 .btn-wrapper{
@@ -207,6 +207,7 @@ input{
     color: var(--clr-secondary-dark);
     font-weight: 700;
     box-shadow: 0 0 20px 3px var(--clr-primary-text-highlight);
+    transition: 0.2s ease-in all;
 }
 
 .btn:hover{
@@ -220,6 +221,40 @@ input{
     font-weight: bold;
 }
 
+
+/* custom checkbox styles */
+input[type="checkbox"]{
+    appearance: none;
+    width: 2rem;
+    height: 2rem;
+    background-color: var(--clr-secondary);
+    box-shadow: 0 0 2px 1px #666666;
+    position: relative;
+    cursor: pointer;
+}
+
+input[type="checkbox"]::after{
+    content: '';
+    width:0.75rem;
+    height:1.25rem;
+    position: absolute;
+    top: 0px;
+    left: 8px;
+    border-radius: 2px;
+    border-right: 4px solid var(--clr-primary-text-highlight);
+    border-bottom: 4px solid var(--clr-primary-text-highlight);
+    transform: rotateZ(35deg);
+    animation: fadeIn .2s ease-in forwards;
+    display: none;
+}
+
+input[type='checkbox']:hover{
+    background: var(--clr-secondary-dark);
+}
+
+input[type='checkbox']:checked::after{
+    display: inline-block;
+}
 
 /* media queries */
 @media screen and (min-width:769px){
@@ -258,6 +293,7 @@ input{
     border: 2px solid var(--clr-secondary-dark);
     color: var(--clr-primary-text-highlight);
     box-shadow: none;
+    transition: 0.2s ease-in all;
 }
 
 .highlight-btn:hover{
@@ -309,4 +345,3 @@ input{
         opacity: 1;
     }
 }
-
