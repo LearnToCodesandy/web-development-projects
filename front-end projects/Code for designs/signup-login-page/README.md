@@ -1,11 +1,9 @@
 # SignIn SignUp Page
 --------------------
 
-* In this design I have made something satisfactory regarding design and implementation
-* could have gone more cleaner in the code
-* more chance of development 
-
-###Improvements
-=================
-make some more animations
-load the transitions overall instead of element wise
+## what have I done in this project
+--------------------------------------
+* [x] made a simple login and signup form 
+* [x] design taken as an inspiration from dribble
+* [x] used only html,css and vanilla-javascript
+* [x] responsive design is implemented.  
