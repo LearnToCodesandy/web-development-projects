@@ -7,3 +7,11 @@
 * [x] design taken as an inspiration from dribble
 * [x] used only html,css and vanilla-javascript
 * [x] responsive design is implemented.  
+
+### Screenshots for the designs templates
+------------------------------------------
+* [x] desktop screenshot
+  ![Screenshot](desktop-design.png)
+
+* [ ] mobile and smaller screenshot
+  ![Screenshot](small-screen-design.png)
