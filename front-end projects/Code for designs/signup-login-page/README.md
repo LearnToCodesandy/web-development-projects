@@ -14,4 +14,4 @@
   ![Screenshot](desktop-design.png)
 
 * [ ] mobile and smaller screenshot
-  ![Screenshot](small-screen-design.png)
+  ![Screenshot](small-screen-design.PNG)
