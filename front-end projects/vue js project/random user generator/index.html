@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Learning vue js | relearning</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	
+	<!-- template is rendered here itself! -->
+	<div id="app">
+		<div class="content-container">
+			<div class="content-wrapper">
+				<div class="img-container">
+					<img v-bind:src="imgUrl" :alt="`${firstname} ${lastname}`">
+				</div>
+				<!-- <h3 class="text">Hi,My Name is</h3> -->
+				<p class="name">{{firstname}} {{lastname}}</p>
+				<div class="details">
+					<span class="details-text">
+						Email : {{email}}
+					</span>
+
+					<span class="details-text">
+						Date of Birth : {{dob}}
+					</span>
+
+					<span class="details-text">
+						Location : {{location}}
+					</span>
+
+					<span class="details-text">
+						Phone : {{phone}}
+					</span>
+				</div>
+			</div>
+			<button class="btn getUser" @click="getUserData">Get Random user</button>
+		</div>
+	</div>
+	<script src="https://unpkg.com/vue@3.0.5"></script>
+	<script src="./script.js"></script>
+</body>
+</html>

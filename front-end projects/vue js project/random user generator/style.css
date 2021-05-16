@@ -1,0 +1,133 @@
+:root{
+	--clr-oxford-blue: #011638ff;
+	--clr-oxford-blue-light: #0226ff;
+	--clr-white: #ffffffce;
+	--clr-pink-lace: #ffcffcff;
+	--clr-dogwood-rose: #dc136cff;
+	--clr-dark-shadow:#333cccce;
+	--clr-light:#ccc;
+}
+
+
+*,
+*::after,
+*::before{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+	outline: none;
+}
+
+html,body{
+	width:100%;
+	font-size: 2.5vw;
+	min-height: 100vh;
+	padding: 0;
+	margin:0;
+	box-sizing: border-box;
+	outline: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: var(--clr-white);
+	font-family: tahoma;
+}
+
+a{
+	text-decoration: none;
+}
+
+#app{
+	width:75%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: var(--clr-oxford-blue);
+	box-shadow: 5px 5px 10px 0px var(--clr-dark-shadow);
+	padding: 1rem;
+	border-radius: 10px;
+}
+
+.content-container{
+	width:100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.btn{
+	padding:0.25rem 0.5rem;
+	border-radius: 2px;
+	font-size: 1rem;
+	color: var(--clr-white);
+	background-color: var(--clr-dogwood-rose);
+	border:2px solid transparent;
+	align-self: flex-start;
+	margin:1rem;
+	cursor: pointer;
+}
+
+.btn:hover{
+	transition: 0.4s ease-in all;
+	box-shadow: 0 0 4px 2px var(--clr-dogwood-rose);
+}
+
+.img-container{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin:1rem 0;
+}
+
+.img-container img{
+	width:5rem;
+	height:5rem;
+	display: inline-block;
+	max-width: 100%;
+	object-fit: cover;
+	border-radius: 50%;
+	border:0.25rem solid var(--clr-dogwood-rose);
+}
+
+.clr-male{
+	border:0.25rem solid var(--clr-white);
+}
+
+.clr-female{
+	border:0.25rem solid var(--clr-dogwood-rose);
+}
+
+.name{
+	text-align: center;
+	font-size: 1.25rem;
+	color: var(--clr-dogwood-rose);
+	font-weight: bold;
+	margin-bottom: 1.5rem;
+}
+
+
+.details{
+	width:100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.details-text{
+	padding:0.5rem 0.75rem;
+	color: var(--clr-light);
+	border:2px solid var(--clr-dogwood-rose);
+	border-radius: 10px;
+	margin:0.25rem 0;
+	cursor: pointer;
+}
+
+.details-text:hover{
+	transition: 0.2s ease-in all;
+	background-color: var(--clr-dogwood-rose);
+	color:var(--clr-white);
+	border:2px solid var(--clr-dogwood-rose);
+	box-shadow: 0 0 10px 1px var(--clr-dogwood-rose);
+}
