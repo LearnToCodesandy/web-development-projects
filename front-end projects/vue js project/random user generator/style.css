@@ -131,3 +131,9 @@ a{
 	border:2px solid var(--clr-dogwood-rose);
 	box-shadow: 0 0 10px 1px var(--clr-dogwood-rose);
 }
+
+@media screen and (min-width:800px){
+	html,body{
+		font-size:1rem;
+	}
+}
