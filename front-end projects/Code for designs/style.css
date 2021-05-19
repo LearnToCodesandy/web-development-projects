@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400&display=swap');
+
+:root{
+    --font-primary : 'Montserrat', sans-serif;
+    --clr-primary:#d6d6d6;
+}
+
+html,body{
+    width:100%;
+    min-height: 100vh;
+    font-family: var(--font-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5vw;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style-type: none;
+}
+
+label{
+    display: block;
+}
+input{
+    display: block;
+}
+
+section{
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 10px #c8c8c8;
+    padding: 1rem;
+    border-radius: 10px;
+    flex-direction: column;
+    margin: 0.5rem 0;
+}
+.wrapper{
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.controls{
+    margin: 0.5rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.demo{
+    margin: 0 1.5rem;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.boxShadowBox{
+    align-self: center;
+    width:10rem;
+    height: 10rem;
+    background: #efefef;
+    border-radius: 10px;
+}
+
+.box{
+    align-self: center;
+    width:10rem;
+    height: 10rem;
+    background: #bdbdbd;
+}
+.code{
+    padding: 1rem 0.75rem;
+    background: #000;
+    border-radius: 10px;
+    margin-top: 2.5rem;
+    color: #15ff00;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.controller{
+    width:100%;
+    margin-bottom: 0.5rem;
+}
+
+#position{
+    font-family: var(--font-primary);
+    font-weight: bold;
+}
+
+
+.btn{
+    padding:0.5rem 0.65rem;
+    border: 2px solid #fff;
+    font-size: .75rem;
+    margin: 0 0.75rem;
+    background: transparent;
+    color: #fff;
+    border-radius: 5rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.35s;
+}
+
+.btn:hover{
+    border: 2px solid #15ff00;
+    font-weight: bold;
+    color: #000;
+    background-color: #15ff00;
+}
+
+@media screen and (max-width:700px){
+    section{
+        padding: 0.25rem;
+    }
+    html,body{
+        font-size:1.75vw;
+    }
+    .btn{
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width:500px){
+    html,body{
+        font-size:2.5vw;
+    }
+
+    .wrapper{
+        flex-direction: column;
+    }
+
+    label{
+        font-size:1.5rem;
+    }
+
+    input{
+        font-size: 1.5rem;
+    }
+
+    code{
+        font-size:1.5rem;
+    }
+
+    .demo{
+        align-items: center;
+        margin: 1.5rem 0;
+    }
+}
+
+/* color palette styles */
+#colorName{
+    width:100%;
+    padding:0.5rem 0.25rem;
+    font-size: 1.2rem;
+    border: 1px solid #cccc;
+}
+
+.label-plt{
+    margin:0.25rem 0;
+}
+
+input[type="color"]{
+    width:2.5rem;
+    height: 2.5rem;
+    overflow: hidden;
+    border: 2px solid transparent;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+}
+
+.plt-btn{
+    padding: 0.5rem 0.75rem;
+    font-size: 1.25rem;
+    margin: 0.25rem 0;
+    background: #000;
+    border: none;
+    border-radius: 5rem;
+    color: #15ff00;
+    transition: 0.25s;
+}
+
+.plt-btn:hover{
+    background-color: #15ff00;
+    color: #000;
+    box-shadow: 0 0 10px 2px #15ff00;
+}
+
+.clr-plt-div{
+    width:2.5rem;
+    height: 2.5rem;
+    align-self: flex-start;
+    margin: 0.1rem;
+}
+
+.boxWrapper{
+    max-width:100%;
+    align-self: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.plt-code{
+    text-align: left;
+}

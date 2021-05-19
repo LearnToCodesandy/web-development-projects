@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Begii | Where you can finally find popins..</title>
+    <!-- <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/skeleton.css"> -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- box shadow generator -->
+        <section>
+            <h1 class="title">Box Shadow Generator</h1>
+            <div class="wrapper">
+                <div class="controls">
+                    <label for="hor-offset">Horizontal Offset</label>
+                    <input class="controller" type="range" max="75" name="horOffset" id="hor-offset">
+                    <label for="ver-offset">Vertical Offset</label>
+                    <input class="controller" type="range" max="75" name="verOffset" id="ver-offset">
+                    <label for="blur">Blur</label>
+                    <input class="controller" type="range" max="75" name="blur" id="blur">
+                    <label for="spread">Spread</label>
+                    <input class="controller" type="range" max="75" name="spread" id="spread">
+                    <label for="boxColor">Box bg-Color</label>
+                    <input class="controller" type="color" name="boxColor" id="boxColor">
+                    <label for="boxShadowColor">Box Shadow Color</label>
+                    <input class="controller" type="color" name="boxShadowColor" id="boxShadowColor">
+                </div>
+                <div class="demo">
+                    <div class="boxShadowBox">
+                        <!-- here the style from the above section will be reflected onto a box! -->
+                    </div>
+                        <!-- code for box shadow will be upadted here! -->
+                    <div class="code">
+                        <code>box shadow : <span id="hor-offset-val">10px</span>,<span id="ver-offset-val">10px</span>,<span id="blur-val">20px</span>,<span id="spread-val">0px</span>,<span id="color-val">#efefef</span></code>
+                        <button class="btn copy">Copy</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Border radius Generator -->
+        <section>
+            <h1 class="title">Border Radius Generator</h1>
+            <div class="wrapper">
+                <div class="controls">
+                    <label for="topLeft">TopLeft</label>
+                    <input type="range" min="1" max="100" value="10" class="rangeSlider" id="topLeft">
+                    <label for="topRight">topRight</label>
+                    <input type="range" min="1" max="100" value="10" class="rangeSlider" id="topRight">
+                    <label for="bottomRight">bottomRight</label>
+                    <input type="range" min="1" max="100" value="10" class="rangeSlider" id="bottomRight">
+                    <label for="bottomLeft">bottomLeft</label>
+                    <input type="range" min="1" max="100" value="10" class="rangeSlider" id="bottomLeft">
+                </div>
+                <div class="demo">
+                    <div class="box"></div>
+                    <div class="code">
+                        <code class="codeBr">border radius : <span id="br-tl">10px</span>,<span id="br-tr">10px</span>,<span id="br-br">10px</span>,<span id="br-bl">10px</span></code>
+                        <button class="btn copyBtn">Copy</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- color palette generator  -->
+        <section>
+            <h1 class="title">Color Palette Generator</h1>
+            <div class="wrapper">
+                <div class="controls">
+                    <label class="label-plt" for="name">Color Name</label>
+                    <input type="text" name="name" id="colorName" placeholder="crimson...">
+                    <label class="label-plt" for="colorValue">color</label>
+                    <input type="color" value="#00ff00" name="color" id="colorValue">
+                    <button class="add-btn plt-btn">Add</button>
+                    <button class="clear-btn plt-btn">Clear All</button>
+                </div>
+                <div class="demo">
+                    <div class="boxWrapper"></div>
+                    <div class="code">
+                        <code class='plt-code'>--clr-primary : #efefef;</code>
+                        <button class="btn copy-plt">Copy</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+     </div>
+     <script src="./js/boxShadow.js"></script>
+     <script src="./js/borderRadius.js"></script>
+     <script src="./js/colorPalette.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
